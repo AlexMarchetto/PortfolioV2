@@ -1,0 +1,153 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: white;
+    background-color: #0f172a;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* -------------------
+
+         ASIDE
+
+------------------- */
+aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    padding-left: 250px;
+    padding-top: 100px;
+    z-index: 100;
+    pointer-events: none;
+}
+
+aside *{
+    pointer-events: auto;
+
+}
+
+aside h1 {
+    font-size: 2.7em;
+    font-family: 'Impact', fantasy;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+aside h2 {
+    margin-top: 10px;
+    font-size: 1.7em;
+}
+
+aside p {
+    margin-top: 30px;
+    width: 500px;
+}
+
+nav ul {
+    margin-top: 111px;
+    width: 300px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+nav ul li .link-line {
+    height: 1px;
+    width: 30px;
+    background-color: rgb(187, 187, 187);
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li:hover .link-line {
+    width: 70px;
+    transition: width 0.3s ease-in-out;
+    background-color: white;
+}
+
+nav ul li:hover a {
+    color: white;
+}
+
+nav ul li .link-line.active {
+    width: 70px; /* Assurez-vous que cela correspond à l'effet de survol */
+    transition: width 0.3s ease-in-out;
+}
+
+
+nav ul li a {
+    color: rgb(187, 187, 187);
+    text-decoration: none;
+    font-family: 'Impact', fantasy;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+}
+
+section {
+    margin-top: 20px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* -------------------
+
+         MAIN
+------------------- */
+main {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    padding-left: 60px;
+}
+
+main div {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+    margin-top: 50px;
+    padding: 50px;
+    margin-right: 200px;
+    width: 50%;
+}
+
+main div section {
+    padding-top: 200px;
+}
+
+main p{
+    line-height: 1.7em;
+}
+
+/* -------------------
+
+      FLASHLIGHT
+
+------------------- */
+#flashlight {
+    position: absolute;
+    border-radius: 50%;
+    width: 1200px;
+    height: 1200px;
+    background: radial-gradient(circle, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0) 50%);
+    pointer-events: none;
+    mix-blend-mode: lighten; 
+}
