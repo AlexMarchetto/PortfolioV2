@@ -71,13 +71,13 @@ nav ul li .link-line {
     transition: width 0.3s ease-in-out;
 }
 
-nav ul li:hover .link-line {
+nav ul li:hover .link-line, .current .link-line{
     width: 70px;
     transition: width 0.3s ease-in-out;
     background-color: white;
 }
 
-nav ul li:hover a {
+nav ul li:hover a, .current a{
     color: white;
 }
 
@@ -151,3 +151,4 @@ main p{
     pointer-events: none;
     mix-blend-mode: lighten; 
 }
+
